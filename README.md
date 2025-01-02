@@ -51,11 +51,11 @@ The **Cover Letter Generator** Chrome Extension is a productivity tool designed 
 
 1.  Clone the repository:
 
-    `git clone https://github.com/your-username/cover-letter-generator-extension.git`
+    `git clone https://github.com/bellapukondaveerendra/chrome-extension-cover-letter-generator`
 
 2.  Navigate to the project directory:
 
-    `cd cover-letter-generator-extension`
+    `cd chrome-extension-cover-letter-generator`
 
 3.  Open Chrome and go to `chrome://extensions/`.
 4.  Enable **Developer Mode** (toggle in the top-right corner).
