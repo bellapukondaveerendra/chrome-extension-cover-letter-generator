@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cover Letter Generator</title>
+  <script src="popup.js" type="module" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+  
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+  
+    textarea {
+      width: 100%;
+      min-height: 200px;
+      max-height: 500px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      resize: both; /* Allow vertical resizing */
+      background-color: #fff;
+      color: #333;
+      min-width: 300px; /* Prevent shrinking too much horizontally */
+      max-width: 100%; /* Prevent overflow horizontally */
+    }
+  
+    #copyButton, #openSettings {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    #copyButton {
+      background-color: #4caf50;
+    }
+  
+    #copyButton:hover {
+      background-color: #45a049;
+    }
+  
+    #openSettings {
+      background-color: #007bff;
+    }
+
+    #openSettings:hover {
+      background-color: #0056b3;
+    }
+  
+    #errorMessage {
+      color: red;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px;
+      background-color: #4caf50; /* Green background */
+      color: white; /* White text */
+      border-radius: 6px 6px 0 0; /* Rounded corners at the top */
+    }
+  
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #ff5f5f;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      line-height: 25px;
+    }
+
+    .close-button:hover {
+      background-color: #ff4c4c;
+    }
+</style>
+<body>
+    <div class="popup-container">
+        <button id="closeButton" class="close-button">X</button>
+        <h2 class="header">Cover Letter Generator</h2>
+        <textarea id="coverLetter" placeholder="Your cover letter will appear here..."></textarea>
+        <button id="copyButton">Copy to Clipboard</button>
+        <p id="errorMessage"></p>
+        <div style="text-align: center;">
+          <button id="openSettings">Edit User Details</button>
+        </div>
+    </div>
+</body>
+</html>
